@@ -1,0 +1,149 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Centered container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Top black “Campus Services” bar */
+.top-bar {
+  background-color: #000;
+  color: #fff;
+  font-size: 13px;
+}
+.top-bar .campus-services {
+  display: block;
+  padding: 6px 0;
+}
+
+/* Header main section */
+.header-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 12px 0;
+}
+
+/* Logo + Title */
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+.logo-title img {
+  height: 60px;
+  margin-right: 15px;
+}
+.title-text .harvard {
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.title-text .sub {
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+  margin-top: -4px;
+}
+
+/* Utility nav */
+.util-nav {
+  display: flex;
+  align-items: center;
+}
+.util-item {
+  display: flex;
+  align-items: center;
+  color: #666;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 0 16px;
+  position: relative;
+}
+.util-item i {
+  margin-right: 6px;
+  font-size: 18px;
+}
+/* Vertical separator between links */
+.util-item + .util-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  bottom: 4px;
+  width: 1px;
+  background-color: #ccc;
+}
+
+/* Primary navigation */
+.navbar {
+  background-color: #000;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+.navbar li {
+  color: #fff;
+  margin: 0 15px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Alert / announcement */
+.alert-section {
+  background-color: #f2f2f2;
+  padding: 25px 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.alert-section .highlight {
+  background-color: #e5f1dd;
+  color: #2e6b34;
+  font-weight: bold;
+  padding: 0 2px;
+}
+.alert-section a {
+  color: #a10000;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+/* Banner image + overlay text */
+.banner {
+  position: relative;
+  margin-top: -5px;
+}
+.banner img {
+  width: 100%;
+  display: block;
+}
+.banner-text {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 4px;
+}
